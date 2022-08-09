@@ -35,9 +35,9 @@ Partial Class Form1
         Me.rbAllowedWt = New System.Windows.Forms.RadioButton()
         Me.rbNotAllowedWt = New System.Windows.Forms.RadioButton()
         Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvData = New System.Windows.Forms.DataGridView()
         Me.dtpItemDate = New System.Windows.Forms.DateTimePicker()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -155,15 +155,15 @@ Partial Class Form1
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dgvData
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(52, 312)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(863, 158)
-        Me.DataGridView1.TabIndex = 14
+        Me.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvData.Location = New System.Drawing.Point(52, 312)
+        Me.dgvData.Name = "dgvData"
+        Me.dgvData.RowHeadersWidth = 51
+        Me.dgvData.RowTemplate.Height = 24
+        Me.dgvData.Size = New System.Drawing.Size(863, 158)
+        Me.dgvData.TabIndex = 14
         '
         'dtpItemDate
         '
@@ -179,7 +179,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(959, 556)
         Me.Controls.Add(Me.dtpItemDate)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvData)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.rbNotAllowedWt)
         Me.Controls.Add(Me.rbAllowedWt)
@@ -195,7 +195,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,6 +214,6 @@ Partial Class Form1
     Friend WithEvents rbAllowedWt As RadioButton
     Friend WithEvents rbNotAllowedWt As RadioButton
     Friend WithEvents btnSubmit As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvData As DataGridView
     Friend WithEvents dtpItemDate As DateTimePicker
 End Class
