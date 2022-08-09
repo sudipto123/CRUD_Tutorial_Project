@@ -37,6 +37,8 @@ Partial Class Form1
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.dgvData = New System.Windows.Forms.DataGridView()
         Me.dtpItemDate = New System.Windows.Forms.DateTimePicker()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -148,9 +150,9 @@ Partial Class Form1
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(52, 234)
+        Me.btnSubmit.Location = New System.Drawing.Point(193, 233)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(131, 44)
+        Me.btnSubmit.Size = New System.Drawing.Size(100, 44)
         Me.btnSubmit.TabIndex = 13
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
@@ -173,11 +175,31 @@ Partial Class Form1
         Me.dtpItemDate.Size = New System.Drawing.Size(220, 22)
         Me.dtpItemDate.TabIndex = 15
         '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(314, 233)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(99, 44)
+        Me.btnUpdate.TabIndex = 16
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(431, 233)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(105, 44)
+        Me.btnDelete.TabIndex = 17
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(959, 556)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.dtpItemDate)
         Me.Controls.Add(Me.dgvData)
         Me.Controls.Add(Me.btnSubmit)
@@ -216,4 +238,6 @@ Partial Class Form1
     Friend WithEvents btnSubmit As Button
     Friend WithEvents dgvData As DataGridView
     Friend WithEvents dtpItemDate As DateTimePicker
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnDelete As Button
 End Class
